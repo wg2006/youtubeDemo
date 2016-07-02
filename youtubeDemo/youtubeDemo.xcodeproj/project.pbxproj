@@ -15,6 +15,12 @@
 		32926D7A1D27636F0020E8F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32926D781D27636F0020E8F3 /* LaunchScreen.storyboard */; };
 		32926D851D2763700020E8F3 /* youtubeDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32926D841D2763700020E8F3 /* youtubeDemoTests.m */; };
 		32926D901D2763700020E8F3 /* youtubeDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32926D8F1D2763700020E8F3 /* youtubeDemoUITests.m */; };
+		32926DA01D2766F30020E8F3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32926D9F1D2766F30020E8F3 /* Security.framework */; };
+		32926DA21D27670A0020E8F3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32926DA11D27670A0020E8F3 /* SystemConfiguration.framework */; };
+		32926DAE1D27684B0020E8F3 /* GTLRYouTubeObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = 32926DA91D27684B0020E8F3 /* GTLRYouTubeObjects.m */; };
+		32926DAF1D27684B0020E8F3 /* GTLRYouTubeQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 32926DAB1D27684B0020E8F3 /* GTLRYouTubeQuery.m */; };
+		32926DB01D27684B0020E8F3 /* GTLRYouTubeService.m in Sources */ = {isa = PBXBuildFile; fileRef = 32926DAD1D27684B0020E8F3 /* GTLRYouTubeService.m */; };
+		32926DB21D276C030020E8F3 /* GTLR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32926DB11D276C030020E8F3 /* GTLR.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,16 @@
 		32926D8B1D2763700020E8F3 /* youtubeDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = youtubeDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32926D8F1D2763700020E8F3 /* youtubeDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = youtubeDemoUITests.m; sourceTree = "<group>"; };
 		32926D911D2763700020E8F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32926D9F1D2766F30020E8F3 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		32926DA11D27670A0020E8F3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		32926DA71D27684B0020E8F3 /* GTLRYouTube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLRYouTube.h; sourceTree = "<group>"; };
+		32926DA81D27684B0020E8F3 /* GTLRYouTubeObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLRYouTubeObjects.h; sourceTree = "<group>"; };
+		32926DA91D27684B0020E8F3 /* GTLRYouTubeObjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLRYouTubeObjects.m; sourceTree = "<group>"; };
+		32926DAA1D27684B0020E8F3 /* GTLRYouTubeQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLRYouTubeQuery.h; sourceTree = "<group>"; };
+		32926DAB1D27684B0020E8F3 /* GTLRYouTubeQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLRYouTubeQuery.m; sourceTree = "<group>"; };
+		32926DAC1D27684B0020E8F3 /* GTLRYouTubeService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLRYouTubeService.h; sourceTree = "<group>"; };
+		32926DAD1D27684B0020E8F3 /* GTLRYouTubeService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLRYouTubeService.m; sourceTree = "<group>"; };
+		32926DB11D276C030020E8F3 /* GTLR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GTLR.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +74,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32926DA21D27670A0020E8F3 /* SystemConfiguration.framework in Frameworks */,
+				32926DA01D2766F30020E8F3 /* Security.framework in Frameworks */,
+				32926DB21D276C030020E8F3 /* GTLR.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,10 +100,14 @@
 		32926D5E1D27636F0020E8F3 = {
 			isa = PBXGroup;
 			children = (
+				32926DA51D2768290020E8F3 /* api */,
+				32926DA11D27670A0020E8F3 /* SystemConfiguration.framework */,
+				32926D9F1D2766F30020E8F3 /* Security.framework */,
 				32926D691D27636F0020E8F3 /* youtubeDemo */,
 				32926D831D2763700020E8F3 /* youtubeDemoTests */,
 				32926D8E1D2763700020E8F3 /* youtubeDemoUITests */,
 				32926D681D27636F0020E8F3 /* Products */,
+				32926DB11D276C030020E8F3 /* GTLR.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,6 +161,28 @@
 				32926D911D2763700020E8F3 /* Info.plist */,
 			);
 			path = youtubeDemoUITests;
+			sourceTree = "<group>";
+		};
+		32926DA51D2768290020E8F3 /* api */ = {
+			isa = PBXGroup;
+			children = (
+				32926DA61D27684B0020E8F3 /* YouTube */,
+			);
+			name = api;
+			sourceTree = "<group>";
+		};
+		32926DA61D27684B0020E8F3 /* YouTube */ = {
+			isa = PBXGroup;
+			children = (
+				32926DA71D27684B0020E8F3 /* GTLRYouTube.h */,
+				32926DA81D27684B0020E8F3 /* GTLRYouTubeObjects.h */,
+				32926DA91D27684B0020E8F3 /* GTLRYouTubeObjects.m */,
+				32926DAA1D27684B0020E8F3 /* GTLRYouTubeQuery.h */,
+				32926DAB1D27684B0020E8F3 /* GTLRYouTubeQuery.m */,
+				32926DAC1D27684B0020E8F3 /* GTLRYouTubeService.h */,
+				32926DAD1D27684B0020E8F3 /* GTLRYouTubeService.m */,
+			);
+			path = YouTube;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,9 +318,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32926DB01D27684B0020E8F3 /* GTLRYouTubeService.m in Sources */,
 				32926D721D27636F0020E8F3 /* ViewController.m in Sources */,
 				32926D6F1D27636F0020E8F3 /* AppDelegate.m in Sources */,
 				32926D6C1D27636F0020E8F3 /* main.m in Sources */,
+				32926DAF1D27684B0020E8F3 /* GTLRYouTubeQuery.m in Sources */,
+				32926DAE1D27684B0020E8F3 /* GTLRYouTubeObjects.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,8 +466,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = youtubeDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = (
+					"-DGTLR_BUILT_AS_FRAMEWORK=1",
+					"-DDEBUG=1",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gangwang.youtubeDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -429,8 +485,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = youtubeDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = "-DGTLR_BUILT_AS_FRAMEWORK=1";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gangwang.youtubeDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -501,6 +562,7 @@
 				32926D961D2763700020E8F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		32926D971D2763700020E8F3 /* Build configuration list for PBXNativeTarget "youtubeDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +571,7 @@
 				32926D991D2763700020E8F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		32926D9A1D2763700020E8F3 /* Build configuration list for PBXNativeTarget "youtubeDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +580,7 @@
 				32926D9C1D2763700020E8F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
